@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "0f93712d-5628-42da-93ca-1ca43b114027",
+            "Value": {
+                "id": "89ac714a-ab65-4dd7-bfd9-0baf8bcd6aa4",
+                "resourcePath": "sprites\\s_bullet\\s_bullet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "12461ff8-d2af-4af0-8850-46137ec621d0",
             "Value": {
                 "id": "19d69f32-a2eb-4198-ae53-b3002ee71ddd",
@@ -135,6 +143,14 @@
             }
         },
         {
+            "Key": "3a205aaf-f875-430f-aeae-c4f936f5edf0",
+            "Value": {
+                "id": "a68e49c1-23b6-4ddb-94a0-e876a08a046a",
+                "resourcePath": "scripts\\minion_find_lane_target\\minion_find_lane_target.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4e1987f0-a641-4c36-b587-64921203c2d4",
             "Value": {
                 "id": "a6b32e0d-bfca-4471-abe2-425bc5ac14ba",
@@ -188,6 +204,14 @@
                 "id": "d2345ffd-5c59-4c53-a0ff-182001828e61",
                 "resourcePath": "views\\6a26f542-f761-4c4c-80ef-49d4d2f2b676.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6d8d030c-d462-465c-bef1-47e5a364ecb5",
+            "Value": {
+                "id": "acd715cc-aca0-4cf7-951f-6762e7e54593",
+                "resourcePath": "objects\\o_bullet\\o_bullet.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -375,6 +399,14 @@
             }
         },
         {
+            "Key": "dfc44738-d5c9-4a9c-a808-33274e815d2b",
+            "Value": {
+                "id": "5fd8b2bc-ccfb-4755-a256-3f3bbaecd038",
+                "resourcePath": "scripts\\minion_find_ship_target\\minion_find_ship_target.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e13c1b30-c599-4225-9144-d2ac71d6c668",
             "Value": {
                 "id": "ce6576d8-9ea9-4b01-87ac-ce8f10cff307",
@@ -440,7 +472,9 @@
         }
     ],
     "script_order": [
-        "73e4432a-af55-4d6d-b2b0-e40381ac75ed"
+        "73e4432a-af55-4d6d-b2b0-e40381ac75ed",
+        "3a205aaf-f875-430f-aeae-c4f936f5edf0",
+        "dfc44738-d5c9-4a9c-a808-33274e815d2b"
     ],
     "tutorial": ""
 }

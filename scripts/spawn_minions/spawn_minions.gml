@@ -29,19 +29,37 @@ minion_count = 3
 
 while(minion_count >0){
 	var minion = instance_create_layer(_capital_ship.x + _x_offset, _capital_ship.y + 80 - (40 * minion_count), "Instances", _minion_type)
-	minion.image_xscale = .25
-	minion.image_yscale = .25
-	minion.lane = _capital_ship.lane
-	minion.team = _capital_ship.team
+	with(minion){
+		image_xscale = .15
+		image_yscale = .15
+		lane = _capital_ship.lane
+		team = _team
+		show_debug_message(team)
+		with(minion){
+			minion_find_lane_target()
+			minion_find_ship_target()
+		}
+	}
+	
 	ds_list_add(minion_list, minion)
 	minion_count--
 }
+	
+
 if (_capital_ship.position = "close"){
-	var minion = instance_create_layer(_capital_ship.x + _x_offset + 40, _capital_ship.y, "Instances", _capital_ship.corvette)
-	minion.image_xscale = .25
-	minion.image_yscale = .25
-	minion.lane = _capital_ship.lane
-	minion.team = _capital_ship.team
+	var minion = instance_create_layer(_capital_ship.x + _x_offset + (40*sign(_x_offset)), _capital_ship.y, "Instances", _capital_ship.corvette)
+	with(minion){
+		image_xscale = .25
+		image_yscale = .25
+		lane = _capital_ship.lane
+		team = _team
+		with(minion){
+			minion_find_lane_target()
+			minion_find_ship_target()
+		}
+	}
+	
+	
 	
 	ds_list_add(minion_list, minion)
 }

@@ -11,4 +11,11 @@ switch (minion_type){
 		max_speed = 1
 	break;
 }
+
+enum minion{
+	moving,
+	locked_on
+}
+
+state = minion.moving
 	

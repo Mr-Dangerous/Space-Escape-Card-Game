@@ -75,7 +75,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "noone",
             "varName": "interceptor",
             "varType": 5
         },
@@ -89,7 +89,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "noone",
             "varName": "fighter",
             "varType": 5
         },
@@ -103,9 +103,23 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "noone",
             "varName": "corvette",
             "varType": 5
+        },
+        {
+            "id": "7fcd3273-2048-46cc-b40b-6a2db0be5cbd",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "instance_find(o_governor, 0)",
+            "varName": "_governer",
+            "varType": 4
         }
     ],
     "solid": false,
