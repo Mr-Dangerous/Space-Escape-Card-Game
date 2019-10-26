@@ -6,6 +6,9 @@ with(other){
 		}
 		hp -= other.damage
 		other.attack_complete = true
+		if (hp < 1){
+			instance_destroy()
+		}
 	}	
 }
 if (attack_complete = true){

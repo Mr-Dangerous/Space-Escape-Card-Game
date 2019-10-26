@@ -15,6 +15,11 @@ if (fire_rate > 0){
 
 if (hp<1){
 	instance_destroy()
+	exit
+}
+
+if (self = noone){
+	exit
 }
 
 switch(state){
@@ -45,8 +50,10 @@ switch(state){
 	break;
 	
 	case minion.locked_on:
+	
 		if(ship_target = noone){
 			state = minion.moving
+			exit
 			
 		}
 		if (fire_rate = 0 and ship_target != noone){
